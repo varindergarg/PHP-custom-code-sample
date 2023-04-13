@@ -1,0 +1,911 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+body{
+	margin:0;
+	padding:0;
+}
+h1 , h2 ,h3 , h4 ,h5, h6, p {
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+/******		 fonts 		******/
+@font-face {
+  font-family: 'FranklinGothic-Book';
+  src: url('../fonts/FranklinGothic-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic-Book.woff') format('woff'), url('../fonts/FranklinGothic-Book.ttf')  format('truetype'), url('../fonts/FranklinGothic-Book.svg#FranklinGothic-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FranklinBold';
+  src: url('../fonts/FranklinBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinBold.woff') format('woff'), url('../fonts/FranklinBold.ttf')  format('truetype'), url('../fonts/FranklinBold.svg#FranklinBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: 'FranklinGothic';
+  src: url('../fonts/FranklinGothic.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic.woff') format('woff'), url('../fonts/FranklinGothic.ttf')  format('truetype'), url('../fonts/FranklinGothic.svg#FranklinGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+    font-family:'Franklin Gothic';
+    src: url('Franklin Gothic.eot');
+	src: url('../fonts/Franklin Gothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Franklin Gothic.woff2') format('woff2'),
+		url('../fonts/Franklin Gothic.woff') format('woff'),
+		url('../fonts/Franklin Gothic.svg#Franklin Gothic') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+.text-center{
+	text-align:center;
+}
+.text-right{
+	text-align:right;
+}
+table{
+	border-collapse:collapse;
+}
+/* 16 march code designer */
+/******	  filter page css begin  	******/
+.filter-page {
+	max-width: 1123px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header-filter {
+	width: 100%;
+	border-bottom: 4px solid #92D050;
+	padding: 14px 0;
+	max-width: 1123px;
+	text-align:center;
+}
+.filter-form {
+	max-width: 530px;
+	margin: 10% auto;
+}
+.filter-forms {
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #cccc;
+	padding: 50px 50px;
+}
+.form-groups {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 21px;
+	align-items: center;
+	position:relative;
+}
+.filter-forms label {
+	width: 40%;
+	font-family: 'FranklinGothic-Book';
+	font-size: 14px;
+	font-weight: normal;
+}
+.right-frm {
+	position: relative;
+	width: 63%;
+}
+.filter-forms input{
+	border: 1px solid #828181;
+	width: 100%;
+	padding: 7px 13px;
+}
+.filter-forms select {
+	border: 1px solid #828181;
+	width: 100%;
+	padding: 6px 13px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+	font-size: 13px;
+	background-color:#fff;
+}
+.filter-forms select:after{
+    width: 0;
+    height: 0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-bottom:100px solid #828181;
+}
+.filter-forms input:focus ,.filter-forms select:focus{
+	box-shadow: 0px 0px 8px #ccc;
+}
+.add-more {
+	position: absolute;
+	right: -29px;
+	top: 7px;
+	cursor: pointer;
+}
+.add-more i {
+	font-size: 18px;
+	color: #92d050;
+}
+.submit-btnn {
+	background: #fff;
+	border: 0px solid #92D050;
+	padding: 9px 23px;
+	border-radius: 2px;
+	margin-top: 25px;
+	background-color: #92D050;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'FranklinGothic-Book';
+	cursor:pointer;
+}
+.submit-btnn:hover {
+	box-shadow: 0px 0px 8px #ccc;
+}
+.extra-flieds{
+	display:none;
+}
+.month--year_sec {
+    padding: 0;
+    margin: 0;
+    width: 63%;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;  
+    justify-content: space-between;
+}
+.month--year_sec li {
+	width: 48%;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+.month--year_sec li select {
+    width: 100%;
+	text-align: center;
+	cursor: pointer;
+	text-align: left;
+}
+/******	 	End filter page css  	******/
+/******	 		index page begin		******/
+.main-page {
+	max-width: 1123px;
+	/* max-width:1068px; */
+	width: 100%;
+	margin: 0 auto;
+}
+/***  header css begin  ****/
+.main-header {
+	width: 100%;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;  
+	width: 100%;
+	border-bottom: 5px solid #92D050;
+	padding: 13.5px 0;
+	/* max-width: 1123px; */
+}
+.header-left , .header-mid ,.header-right{ 
+	width:33.3%;
+}
+.header-mid h2 {
+	font-family: 'FranklinBold';
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #585858;
+	margin-top: 2px;
+	margin-bottom: 0;
+}
+.header-mid h5 {
+	font-family: 'Franklin Gothic';
+	font-size: 14px;
+	color: #585858;
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing:0.3;
+}
+/***  header css end  ****/
+.inner-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 7px;
+	justify-content: space-between;
+}
+.member-status-bx {
+	max-width: 175px;
+	/* height: 211px; */
+	padding: 10px;
+	border: 1px solid #bfbfbf;
+	border-collapse: collapse;
+	width: 100%;
+}
+.inner-heading {
+	font-size: 12px;
+	font-family: 'FranklinBold';
+	color: #585858;
+	text-align: center;
+	margin-bottom: 8px;
+	margin-top: 2px;
+	/* font-family: 'FranklinGothic-book'; */
+	/* font-weight: normal; */
+}
+.inner-headings {
+	font-size: 11px;
+	font-family: 'FranklinBold';
+	color: #585858;
+	text-align: center;
+	margin-bottom: 10px;
+	/* font-family: 'FranklinGothic-book'; */
+	/* font-weight: normal; */
+	margin-top: 0;
+	letter-spacing: 0.3;
+}
+/****  member-status-table begin  ****/
+.member-status-table tr td {
+	font-size: 9px;
+	font-family: 'FranklinGothic-Book';
+	border: 1px solid #c4c4c4;
+	padding: 4.1px 5px;
+}
+.member-status-table tr td:nth-child(2n) {
+	text-align: center;
+	font-size: 10px;
+}
+.point-earned-vs-point-burned .inner-headings {
+	margin-top: 6px;
+}
+.member-status-table {
+	border: 1px solid #c4c4c4;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+.right-area-sect .member-status-table{
+	margin-top:0px;
+}
+.right-area-sect .member-status-table td {
+	padding: 0px 1px;
+	font-size: 9px;
+}
+.right-area-sect .member-status-table tr td:nth-child(2n) {
+	text-align: center;
+	font-size: 9px;
+}
+/****  member-status-table end  ****/
+/* program-over-sec begin */
+.program-over-sec {
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+	max-width: 940px;
+	/* height: 212px; */
+	width: 100%;
+}
+.program-over-table {
+	width: 100%;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+	border-collapse: collapse;
+}
+.program-over-table-1 {
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	border-collapse: collapse;
+}
+.program-over-table-1 thead td{
+	font-size:9px!important;
+	padding-left:5px!important;
+	padding-right:5px!important;
+}
+.program-over-table-1 td{
+	font-size:9px!important;
+	padding-left:4px!important;
+	padding-right:4px!important;
+}
+.program-over-sec tr td {
+	border: 1px solid #bfbfbf;
+	font-size: 10px;
+	font-family: 'FranklinGothic-Book';
+	padding: 5.7px 1px;
+	text-align: center;
+}
+/* program-over-sec end */
+.ponts-earn{
+	width:513px!important;
+}
+.td-active {
+	color: #92d050;
+}
+.linee-chart {
+	max-width: 372px;
+	width: 100%;
+	height: 285px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+.bottom-chart {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;  
+	flex-wrap:wrap;
+	width: 100%;
+	justify-content: space-between
+}
+.columnn-chart {
+	max-width: 744px;
+	width: 100%;
+	height: 285px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+.program-over-sec thead td {
+	font-family: 'FranklinBold';
+	font-size: 9px;
+}
+.program-over-sec thead td{
+	font-family: 'FranklinBold';
+}
+.program-over-sec tr td:first-child {
+	font-family: 'FranklinBold';
+	font-size: 9px;
+	text-align: left;
+	padding: 5.3px 0px 5.3px 6px;
+	/* font-weight: 600; */
+}
+.burn-vs-earn-section {
+	max-width: 257px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+	width: 100%;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;  
+}
+.average-point-table {
+	width: 100%;
+}
+.average-point-table tr td:nth-child(2) {
+	text-align: center;
+}
+.average-point-table tr td {
+	font-size: 9px;
+	font-family: 'FranklinGothic-Book';
+	border: 1px solid #bfbfbf;
+	width: 40%;
+}
+.right-area-sect .member-status-table td:first-child {
+	padding: 0px 3px;
+	font-size: 9px;
+}
+.average-point-table tr td:first-child {
+	width: 60%;
+	padding: 0px 3px;
+}
+.left-area-sect ,.right-area-sect {
+	width: 49%;
+}
+.left-area-sect{
+	margin-right:8px;
+}
+.right-area-sect h3 {
+	margin-bottom: 24px !important;
+}
+.left-area-sect .inner-heading {
+	font-size: 9px;
+	font-family: 'FranklinBold';
+	color: #585858;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.right-area-sect .inner-heading {
+	font-size: 14px;
+	font-family: 'FranklinBold';
+	color: #585858;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.right-average-chart .inner-heading {
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+.margin-top-area{
+	margin-top:7px;
+}
+.left-average-chart{
+	max-width:257px;
+	width:100%;
+}
+.right-average-chart {
+	max-width: 286px;
+	width:100%;
+}
+.doughnut-chart {
+	max-width: 257px;
+	width: 100%;
+	height: 243px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+.point-earned-vs-point-burned{
+	max-width:564px;
+	width:100%;
+	height:342px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+.point-earned-vs-point-burned-1{
+	max-width:564px;
+	width:500px;
+}
+.margin-left{
+	margin-left:0px;
+}
+.margin-leftt{
+	margin-left:40px;
+}
+/***	weblogin-average  ***/
+.weblogin-average{
+	max-width:286px;
+	width:100%;
+	height:166px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+/* Point-contact-measurement */
+.Point-contact {
+	max-width: 286px;
+	width: 100%;
+	height: 169px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+}
+.login-area {
+    background-color:#92D050;
+    /* width: 93%; */
+    height: 90px;
+    position: relative;
+    margin-right: 2px;
+}
+.Point-contact-measurement {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19 */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;  
+}
+.rightt-area-sect {
+    width: 8%;
+}
+.call-area {
+    background-color: #FBC003;
+    height: 100%;
+    position: relative;
+}
+.email-area {
+    background-color: #C00000;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    margin-right: 2px;
+}
+.percents {
+	color: #fff;
+	font-family: 'FranklinGothic-Book';
+	position: absolute;
+	height: 20px;
+	width: 14px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+}
+.percents-login{
+	color:#fff;
+    font-family: 'FranklinGothic-Book';
+    position: absolute;
+    height: 20px;
+    width: 26px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+}
+/* End Point-contact-measurement */
+/* point-bar */
+.point-bar {
+	width: 100%;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	height: 233px;
+}
+/* 16 march code designer */
+/* new code */
+/* data-series begin */
+.data-series {
+	margin-top: 10px;
+}
+.data-series ul {
+	display: flex;
+	margin:0;
+}
+.data-series ul li {
+	list-style: none;
+	font-family: 'FranklinGothic-Book';
+	font-size: 11px;
+	color: #585858;
+	margin-left: 13px;
+	margin-right: 11px;
+	position: relative;
+}
+.login-li:before {
+	background-color: #c00000;
+	position: absolute;
+	left: -15px;
+	top: 4px;
+	height: 9px;
+	width: 9px;
+	content: "";
+}
+.call-li:before {
+	background-color:#fbc003;
+	position: absolute;
+	left: -15px;
+	top: 4px;
+	height: 9px;
+	width: 9px;
+	content: "";
+}
+.email-li:before {
+	background-color:#92d050;
+	position: absolute;
+	left: -15px;
+	top: 4px;
+	height: 9px;
+	width: 9px;
+	content: "";
+}
+/* data-series begin end */
+/* 26 march code */
+label.error {
+	color: #C55A11;
+	position: absolute;
+	left: 0;
+	top: 33px;
+	width: 100%;
+	font-size: 12px;
+	text-align:left;
+}
+.left-charts , .mid-charts ,.right-charts{
+	height:253px; 
+	max-width: 340px;
+	width:100%
+}
+/* popup begin css */
+.send-report-btn{
+	background: #fff;
+	background-color: rgb(255, 255, 255);
+	border: 0px solid #92D050;
+	padding: 9px 23px;
+	border-radius: 2px;
+	margin-top: 25px;
+	background-color: #92D050;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'FranklinGothic-Book';
+	cursor: pointer;
+	margin-left:20px;
+}
+.modal-dialog.cust-dialog {
+	width: 530px;
+	margin: 150px auto;
+}
+.custom-popup .form-groups label {
+	width: 40%;
+	font-family: 'FranklinGothic-Book';
+	font-size: 13px;
+	font-weight:normal;
+}
+.custom-popup .modal-body {
+	padding: 30px 30px;
+}
+.custom-popup .right-frm {
+	width: 100%;
+}
+.close-btns {
+	background: transparent;
+	border: 0px;
+	color: #333;
+	float: right;
+	font-size: 23px;
+}
+.custom-popup .right-frm input , .custom-popup .right-frm textarea{
+	/* border: 1px solid #828181; */
+	width: 100%;
+	padding: 7px 13px;
+	border-radius: 0px;
+}
+.custom-popup .modal-header {
+	padding: 4px 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.bottom-btnss{
+	background: #fff;
+	background-color: rgb(255, 255, 255);
+	border: 0px solid #92D050;
+	padding: 9px 23px;
+	border-radius: 2px;
+	margin-top: 25px;
+	background-color: #92D050;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'FranklinGothic-Book';
+	cursor: pointer;
+	margin-left:0px;
+}
+/* popup end css */
+/* 3 april */
+#create_pdf {
+	padding: 8px 32px;
+	border-radius: 2px;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'FranklinGothic-Book';
+	cursor: pointer;
+}
+.filter-page .alert-success {
+	margin-top: 10px;
+}
+.right-frm .bootstrap-tagsinput input {
+	/* border: 1px solid #ccc; */
+	width: 100%;
+	padding: 7px 13px;
+	border-radius: 0px;
+}
+.bootstrap-tagsinput {
+	width: 100%!important;
+	border-radius: 0px!important;
+}
+/* 4 april */
+.frm-area{
+	display:inline-block;
+}
+#filters .modal-dialog.cust-dialog {
+    width: 300px;
+    margin: 150px auto;
+}
+#filters .form-groups {
+    margin-bottom: 7px;
+}
+#filters input[type=checkbox]{
+    margin: -1px 4px 0 0
+}
+#filters .form-groups label {
+    width: 60%;
+	font-family: 'FranklinGothic-Book';
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+/* 7 april */
+.right-frm-filter{
+	width:100%;
+	text-align:right;
+}
+/* modal */
+.modal-confirm {		
+	color: #636363;
+	width: 325px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}	
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+}	
+.modal-confirm .icon-box {
+	color: #fff;		
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #82ce34;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-confirm .icon-box i {
+	font-size: 58px;
+	position: relative;
+	top: 3px;
+}
+.modal-confirm.modal-dialog {
+	margin-top: 80px;
+}
+.modal-confirm .btn {
+	color: #fff;
+	border-radius: 4px;
+	background: #82ce34;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+	background: #6fb32b;
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+.loader {
+	border: 13px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #92D050;
+	width: 89px;
+	height: 89px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+/* Safari */
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+/* 7 april code designer*/
+.container-a {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container-a input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border: 1px solid #828181;
+}
+.container-a input:checked ~ .checkmark {
+	background-color: #92D050;
+	border-color: #92d050;
+}
+.container-a input:checked ~ .checkmark {
+	background-color: #92D050;
+	border-color: #92d050;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container-a input:checked ~ .checkmark:after {
+  display: block;
+}
+.container-a .checkmark::after {
+	left: 7px;
+	top: 3px;
+	width: 5px;
+	height: 10px;
+	border: solid #fff;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.send-report-btn:hover {
+	box-shadow: 0px 0px 8px #ccc;
+}
+#commentry_box:focus, .bootstrap-tagsinput:focus {
+	box-shadow: 0px 0px 8px #ccc !important;
+}
+.custom-popup .bootstrap-tagsinput .tag.label-primary {
+	background-color: #92d050;
+}
+/* 9 april code */
+a.send-report-btn {
+	width: 200px;
+	padding: 10.6px 42px;
+}
+a.send-report-btn:hover {
+	text-decoration:none;
+}
+#success_modal .close-btns.btn-custt {
+	background: #fff;
+	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	border: 0px solid #92D050;
+	padding: 9px 30px;
+	border-radius: 2px;
+	margin-top: 25px;
+	background-color: #92D050;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'FranklinGothic-Book';
+	cursor: pointer;
+	float:none;	
+}
+#success_modal #fail_msg {
+	width: 94%;
+	margin: 19px auto;
+}

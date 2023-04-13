@@ -1,0 +1,427 @@
+@media only screen and (max-width: 1366px) {
+.filter-form {
+	margin: 8% auto;
+}
+.right-frm-filter .send-report-btn {
+	margin-top: 0;
+}
+.modal-dialog.cust-dialog {
+	margin: 100px auto;
+}
+}
+@media only screen and (max-width: 1115px) {
+.left-charts, .mid-charts, .right-charts {
+	max-width: 33.3%;
+	height: auto;
+}
+.main-page {
+	padding: 0 5px;
+}
+.inner-row.point-bar {
+	height: auto;
+}
+.right-area-sect h3 {
+	margin-bottom: 23px !important;
+}
+.left-area-sect .inner-heading {
+	font-size: 8px;
+}
+.columnn-chart {
+	max-width: 65%;
+}
+.left-average-chart {
+    max-width: 23%;
+}
+.point-earned-vs-point-burned {
+	max-width: 49%;
+}
+.linee-chart {
+	max-width: 34.4%;
+}
+#chartContainer-8 {
+	max-width: 688px !important;
+}
+.member-status-bx {
+	max-width: 18%;
+}
+.program-over-sec {
+	max-width: 81.4%;
+}
+body{
+	padding-right:0;
+}
+.average-point-table tr td:first-child {
+	padding: 0px 0px;
+}
+.right-area-sect .member-status-table td:first-child {
+	padding: 0px 0px;
+}
+}
+@media only screen and (max-width: 1058px) {
+.program-over-table {
+	width: 853px;
+}
+.point-earned-vs-point-burned {
+	max-width: 46%;
+}
+.right-average-chart {
+	max-width: 28%;
+	width: 100%;
+}
+.left-average-chart {
+	max-width: 25%;
+}
+.program-over-sec {
+	max-width: 81%;
+	width: 100%;
+	overflow: scroll;
+	height: 231px;
+}
+.program-over-sec tr td:first-child {
+	padding: 5.3px 0px 5.3px 3px;
+}
+}
+@media only screen and (max-width:992px) {
+.right-area-sect .member-status-table td:first-child {
+	padding: 0px 0px;
+}
+.average-point-table tr td:first-child {
+	padding: 0px 0px;
+}
+.member-status-bx {
+	max-width: 22%;
+}
+.point-earned-vs-point-burned {
+	max-width: 45%;
+}
+.inner-heading {
+	font-size: 12px;
+}
+.right-average-chart {
+	max-width: 29%;
+}
+.right-area-sect .inner-heading {
+	font-size: 12px;
+	margin-bottom: 20px !important;
+}
+.average-point-table tr td {
+	font-size: 9px;
+}
+.left-area-sect .inner-heading {
+	font-size: 6px;
+}
+.right-area-sect .member-status-table td {
+	padding: 0px 1px;
+	font-size: 9px;
+}
+.member-status-table tr td:nth-child(2n) {
+	font-size: 10px;
+}
+.inner-headings {
+	font-size: 10px;
+	line-height: 14px;
+}
+.program-over-sec {
+	max-width: 77%;
+	width: 100%;
+	overflow: scroll;
+	height: 232px;
+}
+#chartContainer {
+	width: 100%!important;
+}
+.right-average-chart .inner-heading {
+	font-size: 10px;
+}
+.data-series ul {
+	padding-left: 10px;
+}
+.data-series {
+	max-width: 180px;
+	width: 180px;
+	margin:10px auto 0;	
+}
+.main-page {
+	padding: 0 10px;
+}
+.doughnut-chart {
+	height: 237px;
+}
+}
+@media only screen and (max-width: 800px) {
+.filter-form {
+	padding: 0 25px;
+}
+.left-area-sect .inner-heading {
+	font-size: 8px;
+	max-width: 136px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 9px;
+}
+.inner-heading {
+	font-size: 12px;
+}
+.form-groups {
+	flex-direction: column;
+}
+.filter-forms label {
+	width: 100%;
+	margin-bottom: 9px;
+}
+.filter-forms input {
+	width: 100%;
+}
+.month--year_sec {width: 100%;}
+.add-more {top: 30px;}
+/******	 header begin	******/
+.program-logo, .incentive-logo {
+	max-width: 106px;
+}
+.header-left, .header-right {
+	width: 20%;
+}
+.header-mid.text-center {
+	width: 80%;
+}
+.header-mid h2 {
+	font-size: 13px;
+}
+.header-mid h5 {
+	font-size: 13px;
+}
+/******	 header End	    ******/
+.member-status-bx {
+	max-width: 100%;
+	width: 100%;
+}
+.inner-row {
+	padding: 0 15px;
+}
+.program-over-sec {
+	max-width: 100%;
+	/* max-width: 100%; */
+	margin-top: 10px;
+	overflow-x: scroll;
+}
+.burn-vs-earn-section ,.doughnut-chart , .weblogin-average ,.Point-contact ,.point-earned-vs-point-burned{
+	max-width: 100%;
+}
+.right-average-chart{
+	width:100%
+}
+#chartContainer-1 {
+	width: 100% !important;
+	margin: 0 auto!important;
+}
+.point-bar.margin-top-area {
+	flex-wrap: wrap;
+}
+#chartContainer-4 ,#chartContainer-5 , #chartContainer-6, #chartContainer-7, #chartContainer-8{
+	max-width: 100% !important;
+}
+.columnn-chart{
+	margin-top:12px;
+}
+/* 9 april code designer */
+.left-average-chart ,.right-average-chart ,.linee-chart ,.columnn-chart ,.bar-chart-2{
+	max-width: 100%;
+} 
+.weblogin-average, .point-earned-vs-point-burned, .inner-row.point-bar {
+	margin-top: 8px;
+}
+.inner-row.point-bar {
+	padding-top: 10px;
+}
+.point-bar {
+	width: 94.6%;
+	margin: 0 auto;
+}
+.left-charts, .mid-charts, .right-charts {
+	height: 265px;
+	max-width: 100%;
+}
+.doughnut-chart {
+	height: 236px;
+}
+.filter-forms {
+	padding: 30px 30px;
+}
+.right-frm {
+	width: 100%;
+}
+#filters .modal-dialog.cust-dialog {
+	width: 70%;
+}
+#filters .form-groups label {
+	width: 100%;
+}
+.right-area-sect .inner-heading {
+	font-size: 13px;
+	margin-bottom: 12px !important;
+}
+.doughnut-chart {
+	height: auto;
+}
+}
+/*	Responsive for mobile */
+@media only screen and (max-width: 767px) {
+.filter-form {
+	padding: 0 25px;
+}
+.doughnut-chart {
+	height: auto;
+}
+.average-point-table tr td:first-child {
+	padding: 0px 3px;
+}
+.right-area-sect .member-status-table td:first-child {
+	padding: 0px 3px;
+}
+.point-earned-vs-point-burned {
+	max-width: 100%;
+}
+.form-groups {
+	flex-direction: column;
+}
+.filter-forms label {
+	width: 100%;
+	margin-bottom: 9px;
+}
+.filter-forms input {
+	width: 100%;
+}
+.month--year_sec {width: 100%;}
+.add-more {top: 30px;}
+/******	 header begin	******/
+.header-filter .incentive-logo {
+	max-width: 106px;
+}
+.main-header .program-logo, .main-header .incentive-logo {
+	max-width: 100%;
+	width: 100%;
+}
+.header-left, .header-right {
+	width: 20%;
+}
+.header-mid.text-center {
+	width: 80%;
+}
+.header-mid h2 {
+	font-size: 13px;
+}
+.header-mid h5 {
+	font-size: 13px;
+}
+/******	 header End	    ******/
+.member-status-bx {
+	max-width: 100%;
+	width: 100%;
+}
+.inner-row {
+	padding: 0 15px;
+}
+.program-over-sec {
+	max-width: 100%;
+	/* max-width: 100%; */
+	margin-top: 10px;
+	overflow-x: scroll;
+	height: unset;
+}
+.burn-vs-earn-section ,.doughnut-chart , .weblogin-average ,.Point-contact{
+	max-width: 100%;
+}
+.right-average-chart{
+	width:100%
+}
+#chartContainer-1 {
+	width: 100% !important;
+	margin: 0 auto !important;
+}
+.point-bar.margin-top-area {
+	flex-wrap: wrap;
+}
+#chartContainer-4 ,#chartContainer-5 , #chartContainer-6, #chartContainer-7, #chartContainer-8 , .point-earned-vs-point-burned{
+	max-width: 100% !important;
+}
+.columnn-chart{
+	margin-top:12px;
+}
+/* 9 april code designer */
+.left-average-chart ,.right-average-chart ,.linee-chart ,.columnn-chart{
+	max-width: 100%;
+} 
+.weblogin-average, .point-earned-vs-point-burned, .inner-row.point-bar {
+	margin-top: 8px;
+}
+.point-bar {
+	width: 94.6%;
+	margin: 0 auto;
+}
+.left-charts, .mid-charts, .right-charts {
+	height: 265px;
+	max-width: 100%;
+}
+.inner-headings {
+	font-size: 10px;
+}
+.inner-row.point-bar {
+	padding-top: 10px;
+}
+.filter-forms {
+	padding: 30px 30px;
+}
+.right-frm {
+	width: 100%;
+}
+#filters .modal-dialog.cust-dialog {
+	width: 70%;
+}
+#filters .form-groups label {
+	width: 100%;
+}
+a.send-report-btn {
+	padding: 8.6px 31px;
+}
+.send-report-btn {
+	padding: 7px 11px;
+	margin-top: 21px;
+	font-size: 13px;
+	margin-left: 12px;
+}
+.custom-popup .form-groups label {
+	width: 100%;
+}
+.modal-dialog.cust-dialog {
+	width: 83%;
+}
+.right-average-chart .inner-heading {
+	font-size: 10px;
+}
+.left-area-sect .inner-heading {
+	font-size: 9px;
+	margin-bottom: 15px;
+}
+.right-area-sect .inner-heading {
+	font-size: 13px;
+	margin-bottom: 20px !important;
+}
+.left-area-sect .inner-heading {
+	font-size: 9px;
+	max-width: 127px;
+}
+.program-over-table {
+	width: 900px;
+}
+.main-page {
+	padding: 0 0px;
+}
+.data-series ul {
+	padding-left: 0;
+}
+.data-series {
+	max-width: 180px;
+	width: 180px;
+	margin: 10px auto 0;
+}
+}
